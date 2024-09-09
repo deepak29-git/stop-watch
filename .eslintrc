@@ -1,0 +1,33 @@
+{
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": true,
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true  // Enables Jest global variables like `test` and `expect`
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:jest/recommended" 
+    ],
+    "plugins": [
+      "react"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+  "rules": {
+  "react/react-in-jsx-scope": "off"
+}
+  }
+  

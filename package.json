@@ -40,18 +40,15 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.3.3",
-    "husky": "^8.0.0"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --ignore-path .gitignore ."
-    ],
-    "*.{js,jsx,css}": [
-      "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,css}\""
-    ]
+    "eslint-plugin-react": "^7.35.2",
+    "husky": "^8.0.0",
+    "prettier": "^3.3.3"
   }
 }
