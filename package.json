@@ -48,6 +48,6 @@
   },
   "lint-staged":{
     "*.{js,jsx}":["eslint"],
-    "*.{js,jsx,css}":["format"]
+    "*.{js,jsx,css}":["prettier --write"]
   }
 }
