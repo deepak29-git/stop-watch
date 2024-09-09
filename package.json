@@ -46,8 +46,12 @@
     "prettier": "^3.3.3",
     "husky": "^8.0.0"
   },
-  "lint-staged":{
-    "*.{js,jsx}":["eslint"],
-    "*.{js,jsx,css}":["prettier --write"]
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --ignore-path .gitignore ."
+    ],
+    "*.{js,jsx,css}": [
+      "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,css}\""
+    ]
   }
 }
